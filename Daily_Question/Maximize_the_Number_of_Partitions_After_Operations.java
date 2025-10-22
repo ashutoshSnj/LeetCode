@@ -5,8 +5,6 @@ import java.util.Map;
 
 public class Maximize_the_Number_of_Partitions_After_Operations {
 
-}
-class Solution {
 	  public int maxPartitionsAfterOperations(String s, int k) {
 	    Map<Long, Integer> mem = new HashMap();
 	    return maxPartitionsAfterOperations(s, 0, true, 0, k, mem) + 1;
